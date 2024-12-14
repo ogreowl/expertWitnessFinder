@@ -8,3 +8,5 @@ The back-end Python code takes in a user's query and creates an embedding of it 
 
 <h3>Front-end</h3>
 The front-end is a search bar that users can write their query into it which is then given to the API to find the best matches. It uses the JSON API input to display the top ten matches with a confidence score for each match, a short description of the expert, and a link to their profile.
+
+You can try the system out yourself here: https://www.expertpages.com/ai-expert-finder (optimized for desktop). You can also read more detail about my process here: https://bobbybecker2001.com/expertpages-rag-system/
