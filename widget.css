@@ -1,0 +1,27 @@
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 480px) {
+    #queryInput {
+        width: 100%; /* Make the input take full width of its container */
+        max-width: 100%; /* Ensure it doesn't exceed container width */
+        margin: 0 auto; /* Center the input horizontally */
+        padding: 10px; /* Keep padding for good input size */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+    #sendQueryButton {
+        display: block; /* Display the button below the input field */
+        width: auto; /* Make the button fit its content size */
+        margin-top: 10px; /* Add some space above the button */
+        margin-left: 0; /* Align the button to the left */
+    }
+}
+
+/* Media query for larger screens (desktop devices) */
+@media (min-width: 1024px) {
+    #queryInput, #sendQueryButton {
+        display: inline-block; /* Keep the search bar and button on the same line */
+        margin: 0 auto; /* Center them horizontally */
+    }
+    .search-container {
+        text-align: center; /* Center the search bar and button container */
+    }
+}
