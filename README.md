@@ -7,4 +7,4 @@ We start off with a csv file of all the experts in the expertpages.com directory
 The back-end Python code takes in a user's query and creates an embedding of it with the same BERT model used for preprocessing. Then, it uses  cosine similarity to match the query with 10 experts, and outputs those experts and their page link through JSON. We use Dockerfile to build it the program as an image before pushing it to Google Cloud Run as a private API for the website to use.
 
 <h3>Front-end</h3>
-The front-end is a search bar that users can write their query into it which is then given to the API to find the best matches. It uses the JSON API input to display a the top ten matches with a confidence score for each match, a short description of the expert, and a link to their profile.
+The front-end is a search bar that users can write their query into it which is then given to the API to find the best matches. It uses the JSON API input to display the top ten matches with a confidence score for each match, a short description of the expert, and a link to their profile.
